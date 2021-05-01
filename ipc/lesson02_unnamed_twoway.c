@@ -2,7 +2,7 @@
 
 
 void print_err(char *msg) {
-    printf(msg);
+    perror(msg);
 }
 
 int main(int argc, char *argv[]) {
