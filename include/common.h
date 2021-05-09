@@ -28,6 +28,10 @@
 
 #include <signal.h>
 
+#include <sys/msg.h>
+
+#include <sys/ipc.h>
+
 extern char **environ;
 
 extern void is_err(ssize_t ret, char *opt); 

@@ -3,10 +3,10 @@ BUILD = build
 DIR_OBJ = $(BUILD)/obj
 
 # 最终生成的可执行文件
-TARGET	= main2
+TARGET	= main
 
 # 模块所在目录
-SRCS	= $(wildcard ipc/lesson04_named_twoway4.c common/*.c)
+SRCS	= $(wildcard ipc/lesson05_msgget.c common/*.c)
 OBJS	= $(addprefix $(DIR_OBJ)/, $(patsubst %.c, %.o, $(SRCS)))
 
 INCLUDES = -I include
