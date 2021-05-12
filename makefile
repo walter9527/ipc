@@ -6,7 +6,7 @@ DIR_OBJ = $(BUILD)/obj
 TARGET	= main
 
 # 模块所在目录
-SRCS	= $(wildcard ipc/lesson05_msgget.c common/*.c)
+SRCS	= $(wildcard ipc/lesson06_shmget_update.c common/*.c)
 OBJS	= $(addprefix $(DIR_OBJ)/, $(patsubst %.c, %.o, $(SRCS)))
 
 INCLUDES = -I include
