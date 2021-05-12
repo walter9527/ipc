@@ -48,6 +48,7 @@ int msqid = -1; // 消息队列标识符
 void signal_fun(int signo) 
 {
     msgctl(msqid, IPC_RMID, NULL);
+    remove(MSG_FILE);
 
     exit(-1);
 }
