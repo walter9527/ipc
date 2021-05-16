@@ -34,6 +34,8 @@
 
 #include <sys/shm.h>
 
+#include <sys/sem.h>
+
 extern char **environ;
 
 extern void is_err(ssize_t ret, char *opt); 
